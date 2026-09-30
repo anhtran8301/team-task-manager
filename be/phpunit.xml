@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="vendor/phpunit/phpunit/phpunit.xsd" bootstrap="vendor/autoload.php" colors="true">
+  <testsuites><testsuite name="Feature"><directory>tests/Feature</directory></testsuite></testsuites>
+  <source><include><directory>app</directory></include></source>
+  <php>
+    <env name="APP_ENV" value="testing" force="true"/>
+    <env name="APP_KEY" value="base64:AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=" force="true"/>
+    <env name="APP_DEBUG" value="false" force="true"/>
+    <env name="BCRYPT_ROUNDS" value="4" force="true"/>
+    <env name="AUTH_DUMMY_PASSWORD_HASH" value="$2y$04$vAFP4nh20qoi3b7wf.zpROpicsB5WfOdZrOA/8Q2JMA/zUgZAdtGW" force="true"/>
+    <env name="CACHE_STORE" value="array" force="true"/>
+    <env name="SESSION_DRIVER" value="array" force="true"/>
+    <env name="DB_CONNECTION" value="mysql"/>
+    <env name="DB_DATABASE" value="team_tasks_test" force="true"/>
+  </php>
+</phpunit>

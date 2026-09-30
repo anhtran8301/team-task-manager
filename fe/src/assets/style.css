@@ -1,0 +1,90 @@
+html {
+  overflow-y: auto;
+}
+body,
+.v-application {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: #24342c;
+}
+.workspace {
+  max-width: 1280px;
+  margin: auto;
+  padding: 44px 36px;
+}
+.eyebrow {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #65786c;
+}
+.page-title {
+  font-size: clamp(30px, 4vw, 42px);
+  line-height: 1.2;
+  letter-spacing: -0.04em;
+  font-weight: 650;
+}
+.muted {
+  color: #69756e;
+}
+.panel {
+  border: 1px solid #e0e6df;
+}
+.v-data-table .v-table__wrapper > table > thead > tr > th {
+  background: #f8faf7;
+  font-size: 12px;
+  color: #647269;
+  font-weight: 600;
+}
+.v-data-table .v-table__wrapper > table > tbody > tr > td {
+  height: 72px;
+}
+.v-field {
+  font-size: 14px;
+}
+.task-title {
+  font-weight: 600;
+  max-width: 360px;
+  overflow-wrap: anywhere;
+}
+.login-shell {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 100vh;
+}
+.login-story {
+  background: #244c3d;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 56px;
+}
+.login-story h1 {
+  font-size: clamp(38px, 5vw, 64px);
+  line-height: 1.08;
+  letter-spacing: -0.045em;
+  max-width: 520px;
+}
+.login-form {
+  width: 100%;
+  max-width: 430px;
+  margin: auto;
+  padding: 36px;
+}
+@media (max-width: 700px) {
+  .workspace {
+    padding: 28px 16px;
+  }
+  .login-shell {
+    grid-template-columns: 1fr;
+  }
+  .login-story {
+    min-height: 240px;
+    padding: 30px;
+    gap: 28px;
+  }
+  .login-story h1 {
+    font-size: 36px;
+  }
+}

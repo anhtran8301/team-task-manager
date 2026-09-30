@@ -1,0 +1,27 @@
+{
+  "name": "team-task-manager",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=24 <25"
+  },
+  "scripts": {
+    "prepare": "husky",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "lint:fe": "npm --prefix fe run lint",
+    "typecheck": "npm --prefix fe run typecheck",
+    "test:fe": "npm --prefix fe test",
+    "build:fe": "npm --prefix fe run build",
+    "lint:be": "composer --working-dir=be lint",
+    "test:be": "composer --working-dir=be test"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^21.2.3",
+    "@commitlint/config-conventional": "^21.2.3",
+    "eslint-config-prettier": "^10.1.8",
+    "husky": "^9.1.7",
+    "lint-staged": "^17.6.0",
+    "prettier": "^3.9.9"
+  }
+}

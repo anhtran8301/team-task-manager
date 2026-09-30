@@ -1,0 +1,10 @@
+**/vendor/**
+**/node_modules/**
+**/dist/**
+**/storage/**
+**/bootstrap/cache/**
+**/test-results/**
+**/playwright-report/**
+**/package-lock.json
+**/composer.lock
+.husky/_/**
